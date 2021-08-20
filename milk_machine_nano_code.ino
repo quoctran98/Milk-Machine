@@ -10,17 +10,17 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 int downState = LOW, milkState = LOW, upState = LOW;
 int downReading, milkReading, upReading;
 long downTime = 0, milkTime = 0, upTime = 0;
-long debounce = 400;
+const long debounce = 400;
 
 // milkfat options
-float milkfatPercentages[] = {100, 0, 1, 2, 3.5, 10, 20, 35};
-String milkfatDescriptions[] = {"Load Pumps", "Skim Milk", "Lowfat Milk", "Reduced Fat Milk", "Whole Milk", "Half and Half", "Cream", "Heavy Cream"};
-int milkfatsArrLength = 7;
+const float milkfatPercentages[] = {100, 0, 1, 2, 3.5, 10, 20, 35};
+const String milkfatDescriptions[] = {"Load/Clean Pumps", "Skim Milk", "Lowfat Milk", "Reduced Fat Milk", "Whole Milk", "Half and Half", "Cream", "Heavy Cream"};
+const int milkfatsArrLength = 7;
 int currentMilkfat = 0;
 
 // dispensing variables and options
-int minDutyCycle = 500;
-float flowRatio = 1; // cream to skim volume flow ratio
+const int minDutyCycle = 500;
+const float flowRatio = 1; // cream to skim volume flow ratio
 bool dispensing = false;
 int dispensingStart = 0; // should be long? but % won't take unsigned long
 bool startedDispensing = false;
