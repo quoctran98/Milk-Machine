@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v2.x Arduino
+L MCU_Module:Arduino_Nano_v2.x Arduino1
 U 1 1 611D24C4
 P 6200 4750
-F 0 "Arduino" H 6200 3661 50  0000 C CNN
+F 0 "Arduino1" H 6200 3661 50  0000 C CNN
 F 1 "Nano" H 6200 3570 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 6200 4750 50  0001 C CIN
 F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 6200 4750 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 6200 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_MEC_5E BTN
+L Switch:SW_MEC_5E BTN3
 U 1 1 611D9011
 P 5350 6900
-F 0 "BTN" H 5350 7285 50  0000 C CNN
+F 0 "BTN3" H 5350 7285 50  0000 C CNN
 F 1 "UP" H 5350 7194 50  0000 C CNN
 F 2 "" H 5350 7200 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 5350 7200 50  0001 C CNN
@@ -36,10 +36,10 @@ F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_MEC_5E BTN
+L Switch:SW_MEC_5E BTN2
 U 1 1 611DA0F0
 P 5350 6550
-F 0 "BTN" H 5350 6935 50  0000 C CNN
+F 0 "BTN2" H 5350 6935 50  0000 C CNN
 F 1 "MILK" H 5350 6844 50  0000 C CNN
 F 2 "" H 5350 6850 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 5350 6850 50  0001 C CNN
@@ -47,10 +47,10 @@ F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_MEC_5E BTN
+L Switch:SW_MEC_5E BTN1
 U 1 1 611DA8C9
 P 5350 6200
-F 0 "BTN" H 5350 6585 50  0000 C CNN
+F 0 "BTN1" H 5350 6585 50  0000 C CNN
 F 1 "DOWN" H 5350 6494 50  0000 C CNN
 F 2 "" H 5350 6500 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 5350 6500 50  0001 C CNN
@@ -58,10 +58,10 @@ F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Relay:EC2-3TNU RELAY
+L Relay:EC2-3TNU RELAY1
 U 1 1 611E160B
 P 7700 3050
-F 0 "RELAY" H 8530 3096 50  0000 L CNN
+F 0 "RELAY1" H 8530 3096 50  0000 L CNN
 F 1 "2 COIL" H 8530 3005 50  0000 L CNN
 F 2 "Relay_THT:Relay_DPDT_Kemet_EC2_DoubleCoil" H 7500 3050 50  0001 C CNN
 F 3 "https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf" H 7500 3050 50  0001 C CNN
@@ -69,10 +69,10 @@ F 3 "https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf" H 7500 3050 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 611E3F98
 P 5400 3400
-F 0 "#PWR?" H 5400 3150 50  0001 C CNN
+F 0 "#PWR0101" H 5400 3150 50  0001 C CNN
 F 1 "GND" H 5405 3227 50  0000 C CNN
 F 2 "" H 5400 3400 50  0001 C CNN
 F 3 "" H 5400 3400 50  0001 C CNN
@@ -80,10 +80,10 @@ F 3 "" H 5400 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:LM2594HVM-5.0 BUCK
+L Regulator_Switching:LM2594HVM-5.0 BUCK1
 U 1 1 611E48F4
 P 6150 3050
-F 0 "BUCK" H 6150 3417 50  0000 C CNN
+F 0 "BUCK1" H 6150 3417 50  0000 C CNN
 F 1 "LM2596" H 6150 3326 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6350 2800 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2594.pdf" H 6150 3150 50  0001 C CNN
@@ -91,20 +91,16 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2594.pdf" H 6150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0102
 U 1 1 611E3747
 P 5400 2950
-F 0 "#PWR?" H 5400 2800 50  0001 C CNN
+F 0 "#PWR0102" H 5400 2800 50  0001 C CNN
 F 1 "+12V" H 5415 3123 50  0000 C CNN
 F 2 "" H 5400 2950 50  0001 C CNN
 F 3 "" H 5400 2950 50  0001 C CNN
 	1    5400 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6350 3350 6350 3400
-Wire Wire Line
-	6350 3400 5400 3400
 Wire Wire Line
 	5400 2950 5750 2950
 Wire Wire Line
@@ -113,9 +109,6 @@ Wire Wire Line
 	6100 3500 6550 3500
 Wire Wire Line
 	6550 3500 6550 3050
-Wire Wire Line
-	6200 5750 5400 5750
-Connection ~ 5400 3400
 Connection ~ 5400 2950
 Wire Wire Line
 	8000 2550 8000 2750
@@ -209,10 +202,10 @@ Wire Wire Line
 	6400 3600 6400 3750
 Connection ~ 5100 6100
 $Comp
-L Display_Character:RC1602A LCD
+L Display_Character:RC1602A LCD1
 U 1 1 611D4D8B
 P 4250 4850
-F 0 "LCD" H 4250 3969 50  0000 C CNN
+F 0 "LCD1" H 4250 3969 50  0000 C CNN
 F 1 "1602A" H 4250 4060 50  0000 C CNN
 F 2 "Display:RC1602A" H 4350 4050 50  0001 C CNN
 F 3 "http://www.raystar-optronics.com/down.php?ProID=18" H 4350 4750 50  0001 C CNN
@@ -263,9 +256,6 @@ Wire Wire Line
 	3850 3550 6300 3550
 Wire Wire Line
 	6300 3550 6300 3750
-Connection ~ 6350 3400
-Wire Wire Line
-	6350 3400 6750 3400
 Wire Wire Line
 	4250 4150 4700 4150
 Wire Wire Line
@@ -275,8 +265,6 @@ Wire Wire Line
 Connection ~ 6300 5800
 Wire Wire Line
 	6300 5800 6300 5750
-Wire Wire Line
-	5400 3400 5400 5750
 Wire Wire Line
 	3850 5050 3850 5800
 Wire Wire Line
@@ -311,10 +299,10 @@ Connection ~ 5400 2000
 Wire Wire Line
 	5400 2000 7600 2000
 $Comp
-L Motor:Motor_DC PUMP
+L Motor:Motor_DC PUMP1
 U 1 1 611DB919
 P 7600 2250
-F 0 "PUMP" H 7758 2246 50  0000 L CNN
+F 0 "PUMP1" H 7758 2246 50  0000 L CNN
 F 1 "SKIM" H 7758 2155 50  0000 L CNN
 F 2 "" H 7600 2160 50  0001 C CNN
 F 3 "~" H 7600 2160 50  0001 C CNN
@@ -322,14 +310,30 @@ F 3 "~" H 7600 2160 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Motor_DC PUMP
+L Motor:Motor_DC PUMP2
 U 1 1 611DC1EB
 P 8000 2250
-F 0 "PUMP" H 8158 2246 50  0000 L CNN
+F 0 "PUMP2" H 8158 2246 50  0000 L CNN
 F 1 "CREAM" H 8158 2155 50  0000 L CNN
 F 2 "" H 8000 2160 50  0001 C CNN
 F 3 "~" H 8000 2160 50  0001 C CNN
 	1    8000 2250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5400 3400 6750 3400
+Wire Wire Line
+	6350 3350 7100 3350
+Wire Wire Line
+	6200 5750 6200 6000
+Wire Wire Line
+	6200 6000 7100 6000
+Wire Wire Line
+	7100 6000 7100 3350
+Connection ~ 7100 3350
+Wire Wire Line
+	8300 3350 8300 3600
+Wire Wire Line
+	8300 3600 6400 3600
+Connection ~ 6400 3600
 $EndSCHEMATC
