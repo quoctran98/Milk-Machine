@@ -116,7 +116,8 @@ void loop() {
       dispensingStart = millisNow;
      }
     int currentCycle = (millisNow - dispensingStart) % round(max(creamOn, skimOn));
-    digitalWrite(creamPin, !(currentCycle <= creamOn));
     digitalWrite(skimPin, !(currentCycle <= skimOn));
+    delay(50); // easiest way to avoid double relay on issue? not great though
+    digitalWrite(creamPin, !(currentCycle <= creamOn + 50));
   }
 }
